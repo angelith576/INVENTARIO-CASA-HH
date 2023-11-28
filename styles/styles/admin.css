@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    /*text-align: center;*/
+}
+#inventory-section, #add-product-form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+#add-product-form{
+    background: #FBDDD5;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 260px;
+    height: 380px;
+    flex-direction: row;
+}
+#product-list {
+    list-style-type: none;
+}
+li {
+    border: 1px solid #ccc;
+    margin: 5px;
+    padding: 5px;
+}
+#roduct-form, #product-code {
+    border-radius: 6px;
+    color: #0d0d0d;
+    border: 1px solid #bdbbde;
+    margin: 10px;
+    padding: 10px;
+    /*display: flex;*/
+    
+}
+#roduct-form, #product-name {
+    border-radius: 6px;
+    color: #0d0d0d;
+    border: 1px solid #bdbbde;
+    margin: 10px;
+    padding: 10px;
+    /*display: flex;*/
+}
+#roduct-form, #product-category {
+    border-radius: 6px;
+    color: #0d0d0d;
+    border: 1px solid #bdbbde;
+    margin: 10px;
+    padding: 10px;
+    /*display: flex;*/
+}
+#roduct-form, #product-quantity {
+    border-radius: 6px;
+    color: #0d0d0d;
+    border: 1px solid #bdbbde;
+    margin: 10px;
+    padding: 10px;
+    /*display: flex;*/
+}
+#btn-agregar{
+    background: #5f8c3f;
+    align-items: center;
+    color: #0d0d0d;
+    margin: 16px;
+    padding: 14px;
+    border: 1px solid  #FBDDD5;
+    border-radius: 6px;
+}
+#volver{
+    float: right;
+}
+#regreso{
+    background: #FBDDD5;
+    align-items: center;
+    color: #0d0d0d;
+    margin: 10px;
+    padding: 8px;
+    border: 1px solid  #FBDDD5;
+    border-radius: 6px;
+}
+#regreso a{
+    text-decoration: none;
+    color: #0d0d0d;
+}
+#titulo-p{
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+#btn-actualizar{
+    background: #5f8c3f;
+    align-items: center;
+    color: #0d0d0d;
+    margin: 16px;
+    padding: 14px;
+    border: 1px solid  #FBDDD5;
+    border-radius: 6px;
+}

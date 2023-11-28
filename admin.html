@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/Icono Casa Hip Hop Med.ico" type="image/x-icon">
+    <title>INVENTARIO CASA HIP HOP MED</title>
+    <!--<link rel="stylesheet" href="./styles/styles.css">-->
+    <link rel="stylesheet" href="styles/styles/admin.css">
+</head>
+<body>
+    <header>
+        <section>
+            <div id="volver">
+                <button type="button" id="regreso"><a href="empleadoLogin.html">Atras</a></button>
+            </div>
+            <div id="banne-p">
+                <img src="imagenes/logo.png" alt="banner primcipal" width="1330px"  height="1250px">
+            </div>
+        </section>
+    </header>
+    <main>
+        <h1 id="titulo-p">INVENTARIO CASA HIP HOP MED</h1>
+        <div id="inventory-section" style="height: 200px; overflow-y: scroll;">
+            <h2>Inventario</h2>
+            <ul id="product-list"></ul>
+        </div>
+        <div id="add-product-form">
+            <h2>Agregar Producto</h2>
+            <form id="product-form">
+                <input type="text" id="product-code" placeholder="Código del Producto" required>
+                <input type="text" id="product-name" placeholder="Nombre del Producto" required>
+                <input type="text" id="product-category" placeholder="Categoria del Producto" required>
+                <input type="number" id="product-quantity" placeholder="Cantidad" required>
+                <button type="button" onclick="addProduct()" id="btn-agregar">Agregar</button>
+            </form>
+        </div>
+        <div id="message"></div>
+        <!--Actualizar-->
+        <div>
+            <h2>Actualizar Producto</h2>
+            <form id="product-form">
+                <input type="text" id="product-code" placeholder="Código del Producto" required>
+                <input type="text" id="product-name" placeholder="Nombre del Producto" required>
+                <input type ="text" id="product-category" placeholder="categoria del producto" required>
+                <input type="number" id="product-quantity" placeholder="Cantidad" required>
+                <button type="button" onclick="addProduct()" id="btn-actualizar">Actualizar</button>
+            </form>
+        </div>
+        <div id="message"></div>
+        <!--Buscar-->
+        <div id="add-product-form">
+            <h2>Buscar Producto</h2>
+        
+            <label for="buscarCodigoNombre">Ingresar Código o Nombre:</label>
+            <input type="text" id="buscarCodigoNombre">
+            <button onclick="buscarProducto()">Buscar</button>
+        
+            <div id="resultadoBusqueda"></div>
+            </div>
+            <!--Eliminar-->
+            <div id="add-product-form">
+            <h2>Eliminar Producto</h2>
+        
+            <label for="codigoEliminar">Ingresar Código:</label>
+            <input type="text" id="codigoEliminar">
+            <button onclick="buscarYEliminarProducto()">Buscar Código</button>
+        
+            <div id="resultadoEliminar"></div>
+            </div>
+            
+        <!--inicio  fración de codigo descargar PDF-->
+         <script src="libreria_crearpdf.js"></script><!--jsPDF - PDF Document creation from JavaScript Version 1.5.3 -->
+         <script src="libreria_autotable.js"></script><!--jsPDF AutoTable plugin v3.5.6-->
+        <!--fin fración de codigo descargar PDF-->
+        <!--conexión con javaScript-->
+        <script src="./scripts/inventario.js"></script>
+    </main>
+</body>
+</html>

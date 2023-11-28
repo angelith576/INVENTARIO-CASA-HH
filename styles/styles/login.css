@@ -1,0 +1,70 @@
+#loggin{
+    text-align: center;
+    background-color: lightpink;
+}
+#login-section{
+    box-shadow: 8px;
+    border-radius: 6px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 300px;
+    background: transparent;
+    display: flex;
+    border: 2px solid #a61414;
+}
+#contenido h2 {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    color: #a61414;
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, sans-serif;
+}
+#login-form{
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+}
+#username {
+    text-align: center;
+    align-items: center;
+    margin: 8px;
+    padding: 6px;
+    color: #bdbbde;
+    display: flex;
+    flex-direction: row;
+    border-radius: 4px;
+    background: transparent;
+}
+#password{
+    text-align: center;
+    margin: 8px;
+    padding: 6px;
+    color: #bdbbde;
+    display: flex;
+    border-radius: 4px;
+    background: transparent;
+}
+#loogin {
+    background: transparent;
+    border: 2px solid #a61414;
+    color: #a61414;
+    border-radius: 4px;
+    
+}
+#message {
+    color: green;
+    font-weight: bold;
+}
+#bn-principal-login{
+    background: #bf907e;
+    width: 1330px;
+    height: 1000px;
+}

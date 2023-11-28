@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/Icono sabor y encanto.ico" type="image/x-icon">
+    <title>Inventario Sabor y Encanto</title>
+    <link rel="stylesheet" href="styles/styles/login.css">
+    <link rel="stylesheet" href="home.html">
+    <link rel="stylesheet" href="contacto.html">
+    <link rel="stylesheet" href="menu.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="Cross-Origin-Policy" content="same-origin-allow-popups">
+    <script src="https://accounts.google.com/gsi/client"async defer></script>
+</head>
+<body>
+    <header>
+        <section>
+            <div id="navegacion2">
+                <nav>
+                    <ul>
+                        <a href="home.html">Home</a>
+                        <a href="menu.html">Menú</a>
+                        <a href="contacto.html">Contactanos</a>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section id="bn-principal-login">
+            <div>
+                <img src="imagenes/logo-sin-fondo1_Mesa de trabajo 1.png" alt="logo-sin-fondo_Mesa" width="1330px" height="1250px">
+            </div>
+        </section>
+    </header>
+    <main>
+        <div id="loggin">
+            <h1>Inventario Sabor y Encanto</h1>
+            <div id="login-section">
+                <div id="contenido">
+                    <h2>Iniciar Sesión</h2>
+                    <div class="login-google">
+                        <div id="g_id_onload" 
+                            data-client_id="394913417892-2mtd5tln4j0c6s3uug2di73uscjilfjg.apps.googleusercontent.com" 
+                            data-context="signin" data-ux_mode="popup" data-callback="handleCredentialresponse"
+                            data-auto_pront="false">
+                        </div>
+                        <div class="g_id_signin" data-type="standard" data-shape="rectangular" data-theme="filled_black"      
+                            data-text="continue_with" data-size="large" data-logo-alignment="left">
+                        </div>
+                    </div>
+                    <br>
+                    <form id="login-form">
+                        <input type="text" id="username" placeholder="Nombre de usuario" required>
+                        <br>
+                        <input type="password" id="password" placeholder="Contraseña" required>
+                        <br>
+                        <button type="button" onclick="login()" id="loogin">Iniciar Sesión</button>
+                    </form>
+                </div>
+            </div>
+            <div id="message"></div>
+            <script src="./scripts/login.js"></script>
+        </div> 
+    </main>
+</body>
+</html>
